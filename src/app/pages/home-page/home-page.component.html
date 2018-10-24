@@ -5,21 +5,25 @@
     </logo>
     <links> 
       <ul class="navbar-nav mr-auto">
+
         <li class="nav-item active waves-light" mdbRippleRadius>
           <a class="nav-link">Home<span class="sr-only">(current)</span></a>
         </li>
+
         <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link">Create</a>
+          <a class="nav-link" [routerLink]="['/userlist']" 
+            routerLinkActive="router-link-active" >
+            List Users
+          </a>
         </li>
+
         <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link">Read</a>
+          <a class="nav-link" [routerLink]="['/userform']" 
+            routerLinkActive="router-link-active" >
+            Add User
+          </a>
         </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link">Update</a>
-        </li>
-        <li class="nav-item waves-light" mdbRippleRadius>
-          <a class="nav-link">Delete</a>
-        </li>
+
       </ul>
       <ul class="navbar-nav nav-flex-icons">
         <li class="nav-item waves-light" mdbRippleRadius>

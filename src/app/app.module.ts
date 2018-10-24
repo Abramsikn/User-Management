@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     MDBBootstrapModule.forRoot()
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [],
+  providers: [ UserService ] ,
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
