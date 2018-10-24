@@ -72,17 +72,15 @@
   
           <!--Table body-->
           <tbody>
-            <tr *ngFor="let row of tableData;let i = index">
+            <tr *ngFor="let row of userData;let i = index">
               <th scope="row">
                 <mdb-checkbox></mdb-checkbox>
               </th>
               <td>{{row.id}}</td>
-              <td>{{row.firstName}}</td>
-              <td>{{row.lastName}}</td>
-              <td>{{row.department}}</td>
+              <td>{{row.firstName}} + ' ' + {{row.lastName}}</td>
               <td>{{row.cellNumber}}</td>
               <td>{{row.emailAddress}}</td>
-              <td>{{row.password}}</td>
+              <td>{{row.department}}</td>
             </tr>
           </tbody>
           <!--Table body-->

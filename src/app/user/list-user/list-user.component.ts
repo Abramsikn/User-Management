@@ -20,16 +20,19 @@ export class ListUserComponent implements OnInit {
     })
   }
 
-  tableData: object[] = [
-    { id: '1', name: 'Mark', cell: '0791134842', email: 'g@reverside.co.za', department: 'Reverside' },
-    { id: '1', name: 'Mark', cell: '0791134842', email: 'g@reverside.co.za', department: 'Reverside' },
-    { id: '1', name: 'Mark', cell: '0791134842', email: 'g@reverside.co.za', department: 'Reverside' },
+  userData: object[] = [
+    { id: this.users, 
+      name: this.users, 
+      cell: this.users,  
+      email: this.users, 
+      department: this.users
+    },
   ];
   private sorted = false;
 
   // 
   sortBy(by: string | any): void {
-    this.tableData.sort((a: any, b: any) => {
+    this.userData.sort((a: any, b: any) => {
       if (a[by] < b[by]) {
         return this.sorted ? 1 : -1;
       }
